@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+    </style>
+    <!-- <script src="test.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Rent By Owner</title>
+</head>
+
+<body id="myFrame">
+
+    <!-- nav bar -->
+    <section>
+        <div class="nav ">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title">
+                    <img src="images/header_logo.svg" alt="">
+                </div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="nav-links ">
+
+                <a href="" target="_blank">Rental<i class="fa fa-angle-down" aria-hidden="true"></i>
+
+                </a>
+                <a href="" target="_blank">Nearby<i class="fa fa-angle-down" aria-hidden="true"></i>
+                </a>
+                <a href="" target="_blank">Destination<i class="fa fa-angle-down" aria-hidden="true"></i>
+                </a>
+                <button class="button2">Find a Vacation Rental</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- header part -->
+    <div class="hero-image container display">
+        <div class="hero-text">
+
+            <h2>JOUNREYS</h2>
+            <h1>Stories From Around The World</h1>
+            <form class="nosubmit">
+                <input data-search class="nosubmit" type="search" id="searchBar" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+
+
+    <div id="shimmer-effect" class="display">
+        <div class="shimmer-flex">
+            <div class="header">
+                <div class="img"></div>
+
+            </div>
+
+            <div class="description">
+                <!-- <div class="test"></div> -->
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+                <div class="line line-4"></div>
+
+            </div>
+        </div>
+        <br>
+        <div class="shimmer-flex">
+            <div class="header">
+                <div class="img"></div>
+
+            </div>
+
+            <div class="description">
+                <!-- <div class="test"></div> -->
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+                <div class="line line-4"></div>
+
+            </div>
+        </div>
+        <br>
+        <div class="shimmer-flex">
+            <div class="header">
+                <div class="img"></div>
+
+            </div>
+
+            <div class="description">
+                <!-- <div class="test"></div> -->
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+                <div class="line line-4"></div>
+
+            </div>
+        </div>
+        <br>
+        <div class="shimmer-flex">
+            <div class="header">
+                <div class="img"></div>
+
+            </div>
+
+            <div class="description">
+                <!-- <div class="test"></div> -->
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+                <div class="line line-4"></div>
+
+            </div>
+        </div>
+        <br>
+        <div class="shimmer-flex">
+            <div class="header">
+                <div class="img"></div>
+
+            </div>
+
+            <div class="description">
+                <!-- <div class="test"></div> -->
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+                <div class="line line-4"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+     <!-- body part -->
+    <section class="display" id="display-id">
+
+
+
+       <div class="character">
+        <div class="flex-container container">
+
+
+
+
+            <div class="flex-item-left1" id="card">
+                <!-- <div class="flex-container" >
+                    <div class="flex-item-left">
+                        <img class="body-image" src="images/St.-Maarten-768x276.webp" alt="">
+                    </div>
+                    <div class="flex-item-right test">
+                        <h1 class="text-color">The Best Sarasota Area<br>Beahes To Explore</h1>
+                   
+                        <p>Written By <a href="">Staff Winter</a></p>
+                   
+                        <p class="body-text-size">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nobis alias, doloribus nulla
+                            blanditiis excepturi.Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+                </div> -->
+                <!-- <div class="flex-container">
+                    <div class="flex-item-left">
+                        <img class="body-image" src="images/St.-Maarten-768x276.webp"alt="">
+                    </div>
+                    <div class="flex-item-right test">
+                        <h1 class="text-color">The Best Sarasota Area<br>Beahes To Explore</h1>
+                    
+                        <p>Written By <a href="">Staff Winter</a></p>
+                     
+                        <p class="body-text-size">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nobis alias, doloribus nulla
+                            blanditiis excepturi.Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+                </div>
+
+                <div class="flex-container">
+                    <div class="flex-item-left ">
+                        <img class="body-image" src="images/St.-Maarten-768x276.webp" alt="">
+                    </div>
+                    <div class="flex-item-right test">
+                        <h1 class="text-color">The Best Sarasota Area<br>Beahes To Explore</h1>
+                   
+                        <p>Written By <a href="">Staff Winter</a></p>
+                 
+                        <p class="body-text-size">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nobis alias, doloribus nulla
+                            blanditiis excepturi.Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-item-left ">
+                        <img class="body-image" src="images/St.-Maarten-768x276.webp"alt="">
+                    </div>
+                    <div class="flex-item-right test">
+                        <h1 class="text-color">The Best Sarasota Area<br>Beahes To Explore</h1>
+                        
+                        <p>Written By <a href="">Staff Winter</a></p>
+                    
+                        <p class="body-text-size">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nobis alias, doloribus nulla
+                            blanditiis excepturi.Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+                </div> -->
+
+
+            </div>
+
+            <!-- for categories -->
+
+            <div class="flex-item-right1" id="">
+                <div>
+
+                    <h1>CATEGORIES</h1>
+                    <div id="card1">
+
+
+                        <!-- <div class="faq-drawer bg-color" >
+                            <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label
+                                class="faq-drawer__title" for="faq-drawer-2">Alabama</label>
+                            <div class="faq-drawer__content-wrapper">
+                                <div class="faq-drawer__content">
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-drawer bg-color">
+                            <input class="faq-drawer__trigger" id="faq-drawer-3" type="checkbox" /><label
+                                class="faq-drawer__title" for="faq-drawer-3">Arizona</label>
+                            <div class="faq-drawer__content-wrapper">
+                                <div class="faq-drawer__content">
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-drawer bg-color">
+                            <input class="faq-drawer__trigger" id="faq-drawer-4" type="checkbox" /><label
+                                class="faq-drawer__title" for="faq-drawer-4">Beahes</label>
+                            <div class="faq-drawer__content-wrapper">
+                                <div class="faq-drawer__content">
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-drawer bg-color">
+                            <input class="faq-drawer__trigger" id="faq-drawer-5" type="checkbox" /><label
+                                class="faq-drawer__title" for="faq-drawer-5">California</label>
+                            <div class="faq-drawer__content-wrapper">
+                                <div class="faq-drawer__content">
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-drawer bg-color">
+                            <input class="faq-drawer__trigger" id="faq-drawer-6" type="checkbox" /><label
+                                class="faq-drawer__title" for="faq-drawer-6">Florida</label>
+                            <div class="faq-drawer__content-wrapper">
+                                <div class="faq-drawer__content">
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-drawer bg-color">
+                            <input class="faq-drawer__trigger" id="faq-drawer-7" type="checkbox" /><label
+                                class="faq-drawer__title" for="faq-drawer-7">Georgia</label>
+                            <div class="faq-drawer__content-wrapper">
+                                <div class="faq-drawer__content">
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-drawer bg-color">
+                            <input class="faq-drawer__trigger" id="faq-drawer-8" type="checkbox" /><label
+                                class="faq-drawer__title" for="faq-drawer-8">Hawaii</label>
+                            <div class="faq-drawer__content-wrapper">
+                                <div class="faq-drawer__content">
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-drawer bg-color">
+                            <input class="faq-drawer__trigger" id="faq-drawer-9" type="checkbox" /><label
+                                class="faq-drawer__title" for="faq-drawer-9">Hiking</label>
+                            <div class="faq-drawer__content-wrapper">
+                                <div class="faq-drawer__content">
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-drawer bg-color">
+                            <input class="faq-drawer__trigger" id="faq-drawer-10" type="checkbox" /><label
+                                class="faq-drawer__title" for="faq-drawer-10">Maine</label>
+                            <div class="faq-drawer__content-wrapper">
+                                <div class="faq-drawer__content">
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-drawer bg-color">
+                            <input class="faq-drawer__trigger" id="faq-drawer-11" type="checkbox" /><label
+                                class="faq-drawer__title" for="faq-drawer-11">Maryland</label>
+                            <div class="faq-drawer__content-wrapper">
+                                <div class="faq-drawer__content">
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-drawer bg-color">
+                            <input class="faq-drawer__trigger" id="faq-drawer-12" type="checkbox" /><label
+                                class="faq-drawer__title" for="faq-drawer-12">Massahusetts</label>
+                            <div class="faq-drawer__content-wrapper">
+                                <div class="faq-drawer__content">
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-drawer bg-color">
+                            <input class="faq-drawer__trigger" id="faq-drawer-13" type="checkbox" /><label
+                                class="faq-drawer__title" for="faq-drawer-13">Oregeno</label>
+                            <div class="faq-drawer__content-wrapper">
+                                <div class="faq-drawer__content">
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-drawer bg-color">
+                            <input class="faq-drawer__trigger" id="faq-drawer-14" type="checkbox" /><label
+                                class="faq-drawer__title" for="faq-drawer-14">Texas</label>
+                            <div class="faq-drawer__content-wrapper">
+                                <div class="faq-drawer__content">
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                    <p>Lorem.</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+
+    </section>
+    <!--pagination section  -->
+    <section class="display">
+        <!-- <div class="pagination container " > -->
+        <nav>
+            <ul class="pagination " id="paginaton">
+
+            </ul>
+        </nav>
+
+        <!-- <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">..</a>
+            <a href="#">38</a>
+            <a href="#">Last</a> -->
+
+        <!-- </div> -->
+    </section>
+    <!-- footer section -->
+    <section class="footer-bg ">
+        <div class="container12 ">
+            <div class="">
+                <div class="flex-container container">
+                    <div class="flex-1st">
+                        <div>
+                            <h1>Find a Place to Stay </h1>
+                            <a class="footer-link" href="">
+                                <p>All RBO Homes</p>
+                            </a>
+                            <a class="footer-link" href="">
+                                <p>Vacation Rental</p>
+                            </a>
+                            <a class="footer-link" href="">
+                                <p>Cabin</p>
+                            </a>
+                            <a class="footer-link" href="">
+                                <p>Condos</p>
+                            </a>
+                            <a class="footer-link" href="">
+                                <p>Cottages</p>
+                            </a>
+                            <a class="footer-link" href="">
+                                <p>Ski Chalets</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-2nd">
+                        <div>
+                            <span class="space">
+                                <br>
+                                <br>
+                                <br>
+                            </span>
+                            <a class="footer-link" href="">
+                                <p>Timeshares</p>
+                            </a>
+                            <a class="footer-link" href="">
+                                <p>RV Rentals</p>
+                            </a>
+                            <a class="footer-link" href="">
+                                <p>Boat Rentals</p>
+                            </a>
+                            <a class="footer-link" href="">
+                                <p>Villas</p>
+                            </a>
+                            <a class="footer-link" href="">
+                                <p>Hotes</p>
+                            </a>
+                            <a class="footer-link" href="">
+                                <p>Resorts</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-3rd">
+                        <div>
+                            <h1>About Us</h1></a>
+                            <a class="footer-link" href="">
+                                <p>About Rent By Owner</p>
+                            </a>
+                            <a class="footer-link" href="">
+                                <p class="space-test">Our Travel Journal</p>
+                            </a>
+                            <!-- <br > -->
+                            <h1>Support</h1>
+                            <a class="footer-link" href="">
+                                <p>FAQs</p>
+                            </a>
+                            <a class="footer-link" href="">
+                                <p>List Your Property</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-4th">
+                        <div>
+                            <h1>Explore</h1>
+                            <a class="footer-link" href="">
+                                <p>My Profile</p>
+                            </a>
+                            <a class="footer-link" href="">
+                                <p>Site Map</p>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="container1 footor-c ">
+            <hr>
+            <div class="flex-container-footer">
+                <div class="flex-container-footer test-footer">
+                    <img class="footer-image" src="images/Facebook_Logo.png" alt="">
+                    <img class="footer-image" src="images/twitter-png.png" alt="">
+                    <img class="footer-image" src="images/instagram.png" alt="">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <footer>Privacy Policy Site Terms</footer>
+
+                </div>
+
+
+
+                <div>
+                    <div>
+                        &copy; <span>2022Rent by Owner</span>. All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="test.js"></script>
+</body>
+
+</html>
