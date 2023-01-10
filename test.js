@@ -110,7 +110,7 @@ function loadCategory() {
 // this section is used for searching products 
 let search_characters = [];
 
-
+let text = `Sorry Not found `;
 //  used for what i am searching for by taking key words
 searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
@@ -120,7 +120,9 @@ searchBar.addEventListener('keyup', (e) => {
             character.title.toLowerCase().includes(searchString) 
         );
     });
+   
     display_products(filteredCharacters);
+    
 });
 
 
@@ -135,33 +137,50 @@ const load_products_on_search = async () => {
         console.log(search_characters.products);
     } catch (err) {
         console.log(err);
-        // console.log("Product does not exit()")
     }
 };
 
 
 //  this is used for showing search items 
 const display_products = (characters) => {
+  if(Array.isArray(characters) && characters.length) {
     const htmlString = characters.slice(0, 5)
-        .map((character) => {
-            return `
-            <div class="flex-container">
-        <div class="flex-item-left">
-            <img class="body-image" src=${character.thumbnail} alt="">
-        </div>
-        <div class="flex-item-right test">
-            <h1 class="text-color">${character.title}</h1>
+    .map((character) => {
+        return `
+        <div class="flex-container">
+    <div class="flex-item-left">
+        <img class="body-image" src=${character.thumbnail} alt="">
+    </div>
+    <div class="flex-item-right test">
+        <h1 class="text-color">${character.title}</h1>
+   
+        <p>Brand Name <a href="">${character.brand}</a></p>
+   
+        <p class="body-text-size">${character.description}</p>
+    </div>
+</div> 
        
-            <p>Brand Name <a href="">${character.brand}</a></p>
+    `;
+    })
+    .join('');
+  card1.innerHTML = htmlString;
+  }
+  else {
+     htmlString =  
+     `
+        <div class="flex-container">
+           <div class="flex-item-left">
        
-            <p class="body-text-size">${character.description}</p>
         </div>
-    </div> 
-           
-        `;
-        })
-        .join('');
-    card1.innerHTML = htmlString;
+            <div class="flex-item-right test">
+                 <h1 class="text-color">${text}</h1>
+            </div>
+        </div> 
+       
+    `
+   card1.innerHTML = htmlString;
+  }
+   
 };
 
 
